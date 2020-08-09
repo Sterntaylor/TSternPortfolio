@@ -1,0 +1,146 @@
+:root {
+    --primary-color: rgba(128, 125, 125);
+    --secondary-color: rgba(186, 4, 4);
+    --tertiary-color: rgba(13, 4, 189);
+    --text-color: white;
+}
+header {
+    padding: 20px 35px;
+    background-image: url("../images/image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-position: 80%;
+    justify-content: center;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px var(--secondary-color);
+    text-align: right;
+}
+header a {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header nav ul li a:hover {
+  background: var(--text-color);
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+body {
+    background-color: var(--primary-color);
+    background-image: url("../images/image-2.jpg");
+}
+.about-me {
+    color: var(--text-color);
+}
+.about-me h2 {
+    background-image: url("../images/image-4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    text-align: center;
+    font-size: 30px;
+}
+.about-me p {
+    font-size: 20px;
+    text-align: justify;
+    text-shadow: 1 1 25px black;
+    line-height: 1.2;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px auto auto;
+}
+.grid-item {
+    width: auto;
+    height: auto;
+    border: none;
+    color: var(--text-color);
+}
+.grid-item header {
+ justify-content: center;
+}
+footer {
+    background-image: url("../images/image-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+footer h2 {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: end;
+    text-shadow: 0 0 15px black;
+}
+footer p {
+    font-size: 20px;
+    text-align: center;
+}
+.mail a {
+    color: var(--secondary-color);
+}
+.mail a:hover {
+    color: var(--text-color);
+}
+footer p {
+    color: var(--text-color);
+}
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+      font-size: larger;
+    }
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    section {
+        padding: 30px 15px;
+    }
+}
