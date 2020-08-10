@@ -104,6 +104,35 @@ footer p {
     font-size: 20px;
     text-align: center;
 }
+#My-work h2 {
+    color: var(--text-color);
+}
+.selfie {
+    position: relative;
+    z-index: 100;
+    transition: 0.5s;
+}
+.selfie:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+.selfie::after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(var(--primary-color), var(--secondary-color));
+    opacity: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.selfie:hover {
+    top: 0px;
+}
+.my-work {
+    display: flex;
+    justify-content: center;
+}
 .mail a {
     color: var(--secondary-color);
 }
