@@ -87,6 +87,7 @@ body {
 .grid-item header {
  justify-content: center;
 }
+
 footer {
     background-image: url("../images/image-3.jpg");
     background-size: cover;
